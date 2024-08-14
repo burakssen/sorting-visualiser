@@ -1,5 +1,5 @@
 // algorithms/index.ts
-export { bubbleSort } from '@/algorithms/bubblesort';
+export { bubbleSort } from '@/algorithms/bubbleSort';
 export { mergeSort } from '@/algorithms/mergeSort';
 export { quickSort } from '@/algorithms/quickSort';
 export { insertionSort } from '@/algorithms/insertionSort';
