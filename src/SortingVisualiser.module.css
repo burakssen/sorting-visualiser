@@ -1,0 +1,28 @@
+.scrollable_container {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Prevent vertical overflow */
+  white-space: nowrap; /* Ensure bars are displayed in a single line */
+  padding: 0 4px; /* Space between bars and edges */
+}
+
+.bar {
+  transition: height 0.3s ease, background-color 0.3s ease;
+  display: inline-block;
+  margin: 0 1px; /* Optional: for spacing between bars */
+}
+
+.bar-comparing {
+  background-color: #f40404; /* Charcoal Gray */
+}
+
+.bar-sorted {
+  background-color: #6B7280; /* Cool Gray */
+}
+
+.bar-default {
+  background-color: #D1D5DB; /* Zinc Gray */
+}
