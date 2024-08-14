@@ -10,6 +10,8 @@ import {
 import React from "react";
 import { useState } from "react";
 
+import { ArrowLeftIcon } from "lucide-react";
+
 type SettingsPanelProps = {
   onSort: () => void; // Function to be called when the Sort button is clicked
   onShuffle: () => void; // Function to be called when the Shuffle button is clicked
@@ -31,9 +33,21 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({
     <div className="flex flex-col w-full lg:w-1/4 lg:h-screen p-4 border-r-4">
       <div className="lg:flex-grow">
         <div className="mb-6">
-          <label className="block mb-2 text-lg font-medium">
-            Array Size: {size}
-          </label>
+          <div className="flex flex-row space-x-1 justify-start mb-6 items-center">
+            <Button
+              variant="ghost"
+              onClick={() => {
+                window.location.href = "/";
+              }}
+            >
+              <ArrowLeftIcon />
+            </Button>
+            <h2
+              children={`Array Size: ${size}`}
+              className="text-lg font-medium"
+            />
+          </div>
+
           <Slider
             defaultValue={[50]}
             max={1000}
