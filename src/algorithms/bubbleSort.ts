@@ -1,5 +1,6 @@
 import { ArrayElement } from "@/types";
 import { delay, swap } from "@/utils/sortingUtils";
+import React from "react";
 
 export const bubbleSort = async (
   array: ArrayElement[], 
